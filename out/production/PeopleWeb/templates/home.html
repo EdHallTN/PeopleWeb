@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+{{#personList}}
+<ol>
+    <a href="/person?id={{id}}">{{firstName}} {{lastName}}</a>
+</ol>
+{{/personList}}
+<ol>
+{{#condPrevious}}
+<a href="/?offset={{previous}}">Previous</a>
+{{/condPrevious}}
+
+{{#condNext}}
+<a href="/?offset={{next}}">Next</a>
+{{/condNext}}
+</ol>
+</body>
+</html>
